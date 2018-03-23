@@ -39,8 +39,8 @@ scannerConfig = function(){
 
 
     // Some predefined settings, comment out the ones you don't want enabled; Scanner gets initialized with every symbology enabled
-    var mw_c =  mwbScanner.getConstants()
-        , settings = [
+    var mw_c =  mwbScanner.getConstants(), settings ;
+	settings = [
             {'method': 'MWBsetActiveCodes', 'value' : [mw_c.MWB_CODE_MASK_DM | mw_c.MWB_CODE_MASK_39 | mw_c.MWB_CODE_MASK_93 | mw_c.MWB_CODE_MASK_QR | mw_c.MWB_CODE_MASK_128 | mw_c.MWB_CODE_MASK_PDF]},
             {"method" : 'MWBenableZoom', "value" : [true]},
             {"method" : 'MWBsetZoomLevels', "value" : [200, 400, 1]},
